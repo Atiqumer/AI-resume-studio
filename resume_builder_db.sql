@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2025 at 07:18 AM
+-- Generation Time: Nov 17, 2025 at 08:48 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,11 +45,7 @@ CREATE TABLE `resumes` (
 --
 
 INSERT INTO `resumes` (`id`, `user_id`, `title`, `template`, `personal_info`, `experience`, `education`, `skills`, `created_at`, `updated_at`) VALUES
-(3, 1, 'template 3', 'template3', '{\"full_name\":\"Abdul Rafay\",\"email\":\"abdulrafaymunir@gmail.com\",\"phone\":\"03258047226\",\"linkedin\":\"https:\\/\\/www.linkedin.com\\/in\\/abdul-rafay-munir-dev\\/\",\"summary\":\"Motivated Computer Science student passionate about front-end web\\r\\ndevelopment. Skilled in building responsive, user-friendly interfaces\\r\\nusing HTML, CSS, Tailwind CSS, JavaScript, and React.js. Experienced\\r\\nwith WordPress customization, performance optimization, and\\r\\nSEO-friendly design. Strong problem-solving mindset with a goal to\\r\\nadvance as a full-stack developer contributing to innovative and\\r\\nscalable web solutions.\"}', '[{\"job_title\":\"WordPress Intern\",\"company\":\"ViceTech\",\"duration\":\"JUNE 2023 - NOVEMBER 2023\",\"description\":\"\\u25cf Designed and customized 10+ WordPress themes to improve UI\\r\\nconsistency and performance.\\r\\n\\u25cf Assisted in content updates, plugin management, and\\r\\nresponsive layout optimization.\\r\\n\\u25cf Improved SEO rankings by implementing keyword strategies\\r\\nand faster load times.\\r\\n\\u25cf Collaborated with developers to ensure project delivery within\\r\\nclient deadlines.\"}]', '[{\"degree\":\"Bachelor of Science in Computer Science (BSCS)\",\"institution\":\"Superior University\",\"year\":\"2023 - PRESENT\"},{\"degree\":\"Superior College\",\"institution\":\"Intermediate in Computer Science\",\"year\":\"2021 - 2023\"},{\"degree\":\"Matriculation\",\"institution\":\"Lahore Islamic Mission High School\",\"year\":\"2019 - 2021\"}]', '[\"HTML5\",\"CSS3\",\"Tailwind CSS\",\"JavaScript (ES6+)\",\"React.js\",\"MySQL\",\"Python\",\"WordPress\",\"VS Code\",\"GitHub\",\"XAMPP\"]', '2025-11-16 12:54:51', '2025-11-16 13:21:28'),
-(4, 1, 'My Resume', 'template2', '{\"full_name\":\"\",\"email\":\"\",\"phone\":\"\",\"linkedin\":\"\",\"summary\":\"\"}', '[]', '[]', '[]', '2025-11-16 13:22:52', '2025-11-16 13:22:52'),
-(5, 1, 'My Resume', 'template3', '{\"full_name\":\"\",\"email\":\"\",\"phone\":\"\",\"linkedin\":\"\",\"summary\":\"\"}', '[]', '[]', '[]', '2025-11-16 13:22:54', '2025-11-16 13:22:54'),
-(6, 1, 'My Resume', 'template1', '{\"full_name\":\"\",\"email\":\"\",\"phone\":\"\",\"linkedin\":\"\",\"summary\":\"\"}', '[]', '[]', '[]', '2025-11-16 13:22:58', '2025-11-16 13:22:58'),
-(7, 1, 'My Resume', 'template1', '{\"full_name\":\"Abdul Rafay Munir\",\"email\":\"abdulrafaymunir@gmail.com\",\"phone\":\"03258047226\",\"linkedin\":\"\",\"summary\":\"\"}', '[]', '[]', '[]', '2025-11-16 13:23:12', '2025-11-16 13:23:12');
+(3, 1, 'template 1', 'template1', '{\"full_name\":\"Abdul Rafay\",\"email\":\"abdulrafaymunir@gmail.com\",\"phone\":\"03258047226\",\"linkedin\":\"https:\\/\\/www.linkedin.com\\/in\\/abdul-rafay-munir-dev\\/\",\"summary\":\"Motivated Computer Science student passionate about front-end web\\r\\ndevelopment. Skilled in building responsive, user-friendly interfaces\\r\\nusing HTML, CSS, Tailwind CSS, JavaScript, and React.js. Experienced\\r\\nwith WordPress customization, performance optimization, and\\r\\nSEO-friendly design. Strong problem-solving mindset with a goal to\\r\\nadvance as a full-stack developer contributing to innovative and\\r\\nscalable web solutions.\"}', '[{\"job_title\":\"WordPress Intern\",\"company\":\"ViceTech\",\"duration\":\"JUNE 2023 - NOVEMBER 2023\",\"description\":\"\\u25cf Designed and customized 10+ WordPress themes to improve UI\\r\\nconsistency and performance.\\r\\n\\u25cf Assisted in content updates, plugin management, and\\r\\nresponsive layout optimization.\\r\\n\\u25cf Improved SEO rankings by implementing keyword strategies\\r\\nand faster load times.\\r\\n\\u25cf Collaborated with developers to ensure project delivery within\\r\\nclient deadlines.\"}]', '[{\"degree\":\"Bachelor of Science in Computer Science (BSCS)\",\"institution\":\"Superior University\",\"year\":\"2023 - PRESENT\"},{\"degree\":\"Superior College\",\"institution\":\"Intermediate in Computer Science\",\"year\":\"2021 - 2023\"},{\"degree\":\"Matriculation\",\"institution\":\"Lahore Islamic Mission High School\",\"year\":\"2019 - 2021\"}]', '[\"HTML5\",\"CSS3\",\"Tailwind CSS\",\"JavaScript (ES6+)\",\"React.js\",\"MySQL\",\"Python\",\"WordPress\",\"VS Code\",\"GitHub\",\"XAMPP\"]', '2025-11-16 12:54:51', '2025-11-17 07:46:54');
 
 -- --------------------------------------------------------
 
@@ -104,7 +100,7 @@ ALTER TABLE `resumes`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
