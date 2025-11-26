@@ -80,17 +80,3 @@ Contributions are welcome! If you would like to contribute, please follow these 
 
 ---
 
-## 📄 License
-
-*(Add license information here, e.g., MIT, GPL, or state if no license is provided.)*
-
----
-
-## 📧 Contact
-
-For any questions or suggestions, please contact the repository owner:
-
-* **Atiqumer**
-    * [GitHub Profile](https://github.com/Atiqumer)
-
-*(End of README)*
