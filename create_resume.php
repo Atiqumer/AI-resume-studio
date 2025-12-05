@@ -118,6 +118,7 @@ $current_template = $resume['template'] ?? 'template1';
                 <div
                     class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 py-4"
                 >
+                <a href="dashboard.php" class="flex items-center gap-3 group cursor-pointer">
                     <div class="flex items-center gap-3 group cursor-pointer">
                         <div class="text-primary bg-primary/10 p-2 rounded-xl group-hover:scale-110 transition-transform duration-300">
                             <span class="material-symbols-outlined text-2xl">description</span>
@@ -126,6 +127,7 @@ $current_template = $resume['template'] ?? 'template1';
                             Resume<span class="gradient-text">Studio</span>
                         </h2>
                     </div>
+        </a>
                     <div class="flex items-center gap-4">
                         <div class="flex items-center gap-3 px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
                             <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-primary to-blue-500 text-white font-bold text-sm">

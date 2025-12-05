@@ -120,6 +120,7 @@ if (isLoggedIn()) {
       >
         <div class="container mx-auto px-4 lg:px-8">
           <div class="flex h-20 items-center justify-between">
+            <a href="index.php" class="flex items-center gap-3 group cursor-pointer">
             <div class="flex items-center gap-3 group cursor-pointer">
               <div class="text-primary bg-primary/10 p-2 rounded-xl group-hover:scale-110 transition-transform duration-300">
                 <span class="material-symbols-outlined text-3xl">description</span>
@@ -128,6 +129,7 @@ if (isLoggedIn()) {
                 Resume<span class="gradient-text">Studio</span>
               </h2>
             </div>
+    </a>
             <div class="flex items-center gap-3">
               <button
                 class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-11 px-6 bg-slate-100 dark:bg-slate-800 text-[#0e141b] dark:text-slate-50 text-sm font-semibold leading-normal hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-105"
@@ -155,7 +157,7 @@ if (isLoggedIn()) {
                 <div class="inline-flex items-center justify-center lg:justify-start">
                   <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
                     <span class="material-symbols-outlined text-lg">auto_awesome</span>
-                    AI-Powered Resume Builder
+                    Resume Builder
                   </span>
                 </div>
                 <h1
