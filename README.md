@@ -28,7 +28,7 @@ resume‑studio/
 ├── index.php               # Main landing / resume input page
 └── resume_builder_db.sql   # Database schema for storing resumes
 
-````
+```
 
 ---
 
