@@ -1,255 +1,89 @@
-# Resume-Studio
+# resume‑studio
 
-[![Built With: PHP](https://img.shields.io/badge/Built%20With-PHP-blue)]()
-[![Database: MySQL](https://img.shields.io/badge/Database-MySQL-orange)]()
-[![Server: XAMPP](https://img.shields.io/badge/Server-XAMPP-lightgrey)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 
-Resume-Studio is a PHP + MySQL project built on **XAMPP**, allowing users to create, store, and generate formatted resumes using professionally styled templates.  
-It is lightweight, beginner-friendly, and fully customizable.
+## 🔧 What is resume‑studio
 
----
+`resume‑studio` is a simple PHP-based resume builder / resume generator. It allows users to build and generate resumes using customizable templates and a backend built with PHP + SQL.  
+The project includes:  
 
-## 🚀 Features
-
-<<<<<<< HEAD
-- PHP-based resume builder
-- Stores all data in MySQL
-- Template-based resume generation
-- Supports multiple resume entries
-- Easy to run on XAMPP (Apache + MySQL)
-- Simple folder structure, easy to modify
-=======
-- PHP-based resume builder  
-- Stores all data in MySQL  
-- Template-based resume generation  
-- Supports multiple resume entries  
-- Easy to run on XAMPP (Apache + MySQL)  
-- Simple folder structure, easy to modify  
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
-- Optional PDF export support (via Dompdf)
+- A web UI (PHP pages) for entering resume data.  
+- Template-based resume generation (HTML → PDF).  
+- A database schema to store/retrieve resume entries (`resume_builder_db.sql`).  
+- Support files and dependencies (e.g. `dompdf` for PDF generation).  
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 
-resume-studio/
+resume‑studio/
 │
-├── index.php                # Start page / form input
-├── dashboard.php            # Manage saved resumes
-├── create_resume.php        # Generates resume using template
-│
-<<<<<<< HEAD
-├── resume_builder.sql    # MySQL database schema
-=======
-├── resume_builder_db.sql    # MySQL database schema
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
-│
-├── includes/                # Config + shared PHP components
-│   ├── config.php           # Database credentials
-│   ├── db.php               # DB connection file
-│   └── helpers.php          # Utility functions
-│
-├── templates/               # Resume templates (HTML/CSS)
-│   ├── template1.php
-│   ├── template2.php
-│   └── assets/              # Images/CSS for templates
-│
-├── process/
-│   └── save_resume.php      # Handles form submission
-│
-└── dompdf/ (optional)       # PDF export library if enabled
+├── dompdf/                 # PDF library for rendering HTML to PDF
+├── includes/               # Shared PHP includes (e.g. config, helpers)
+├── process/                # Form processing / backend logic
+├── templates/              # Resume templates (HTML/CSS)
+├── create_resume.php       # Entry point for resume creation
+├── dashboard.php           # Dashboard for managing resumes
+├── index.php               # Main landing / resume input page
+└── resume_builder_db.sql   # Database schema for storing resumes
 
-<<<<<<< HEAD
-```
-=======
 ````
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
 
 ---
 
-## ⚙️ Requirements
+## 🚀 Getting Started — Installation & Running Locally
 
-<<<<<<< HEAD
-- **XAMPP** (7.x / 8.x)
-- **PHP 7.4+ or PHP 8.x**
-- **MySQL** (via XAMPP)
-- Apache enabled
-- PHP extensions enabled:
-  - `mysqli`
-  - `mbstring`
-=======
-- **XAMPP** (7.x / 8.x)  
-- **PHP 7.4+ or PHP 8.x**  
-- **MySQL** (via XAMPP)  
-- Apache enabled  
-- PHP extensions enabled:  
-  - `mysqli`  
-  - `mbstring`  
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
-  - `gd` (optional, for PDF/image support)
-
----
-
-## 🛠️ Installation (XAMPP)
-
-### 1. Clone or download the repository
-<<<<<<< HEAD
-
-```bash
-git clone https://github.com/Abdul-Rafay-Munir/resume-studio.git
-```
-=======
-```bash
-git clone https://github.com/Abdul-Rafay-Munir/resume-studio.git
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Abdul-Rafay-Munir/resume-studio.git
 ````
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
 
-### 2. Move the project into XAMPP `htdocs`
-
-```
-C:\xampp\htdocs\resume-studio\
-```
-
-### 3. Start Apache & MySQL from XAMPP Control Panel
-
-### 4. Create and import the database
-
-<<<<<<< HEAD
-- Open: `http://localhost/phpmyadmin`
-- Create a database (example: `resume_studio`)
-- Import:
-=======
-* Open: `http://localhost/phpmyadmin`
-* Create a database (example: `resume_studio`)
-* Import:
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
-
-```
-resume_builder_db.sql
-```
-
-### 5. Configure database settings
-
-Edit:
-
-```
-includes/config.php
-```
-
-Example:
-
-```php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "resume_studio";
-```
-
-### 6. Run the project
-
-Open in your browser:
-
-```
-http://localhost/resume-studio/
-```
+2. Set up a local web server + PHP (e.g. XAMPP, MAMP, LAMP)
+3. Create a MySQL database and import the schema from `resume_builder_db.sql`
+4. Update database configuration in the relevant config file (if exists) under `includes/`
+5. Navigate to `index.php` in your browser to start using the resume builder
 
 ---
 
-## 🎯 Usage
+## 📝 Usage
 
-<<<<<<< HEAD
-- Open the homepage and fill your resume information
-- Save resume → data is stored in MySQL
-- Choose a template from `/templates/`
-- `create_resume.php` generates clean formatted output
-- Optionally export to PDF (if Dompdf is installed)
-=======
-* Open the homepage and fill your resume information
-* Save resume → data is stored in MySQL
-* Choose a template from `/templates/`
-* `create_resume.php` generates clean formatted output
-* Optionally export to PDF (if Dompdf is installed)
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
+* Fill in your resume details via the web UI.
+* Choose a template (from `templates/`) for how your resume should look.
+* Generate your resume — the system will produce a downloadable PDF using `dompdf`.
+* Manage previously created resumes via `dashboard.php`.
 
 ---
 
-## 🗄 Database Schema Overview
+## ✅ Features
 
-`resume_builder_db.sql` consists of tables such as:
-
-<<<<<<< HEAD
-- `personal_info` — name, contact, summary
-- `education` — degree, institution, duration
-- `experience` — job history
-- `skills` — skill sets
-- `resumes` — links resume sections together
-=======
-* `personal_info` — name, contact, summary
-* `education` — degree, institution, duration
-* `experience` — job history
-* `skills` — skill sets
-* `resumes` — links resume sections together
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
-
-You can extend schema as needed.
+* HTML → PDF conversion via `dompdf`.
+* Multiple resume templates.
+* Database-backed storage for resume data.
+* Easy to deploy on any PHP + MySQL enabled server.
 
 ---
 
-## 🎨 Customization
+## 🚧 Known Limitations / TODOs
 
-### ➤ Add New Templates
-
-Simply create a new file inside:
-
-```
-templates/
-```
-
-For example:
-
-```
-template3.php
-```
-
-### ➤ Add New Resume Fields
-
-Modify:
-
-<<<<<<< HEAD
-- `index.php`
-- `process/save_resume.php`
-- Database tables accordingly
-=======
-* `index.php`
-* `process/save_resume.php`
-* Database tables accordingly
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
+* No authentication / user‑accounts — resumes are stored globally (not per user).
+* Template styling is minimal; customizing templates requires manual HTML/CSS edits.
+* No input validation or sanitization — consider adding security/hardening before public use.
+* No export history or versioning system for resumes.
 
 ---
 
-## 🔮 Future Improvements
+## 💡 How You Can Contribute
 
-<<<<<<< HEAD
-- Add user authentication
-- More resume templates
-- Live preview mode
-- Modern UI redesign (Bootstrap/Tailwind)
-- API-based version
-- Enhanced PDF export
-=======
-* Add user authentication
-* More resume templates
-* Live preview mode
-* Modern UI redesign (Bootstrap/Tailwind)
-* API-based version
-* Enhanced PDF export
->>>>>>> 06aa8ac27dca1204de532104ff7d24f9fb480ba8
+Contributions are welcome! You can help by:
 
----
+* Adding new resume templates (in `/templates`).
+* Improving styling, adding CSS themes.
+* Adding user authentication or session support.
+* Validating / sanitizing user inputs.
+* Improving documentation.
 
-## 🤝 Contributing
-
-Pull requests are welcome.
-You can contribute by adding templates, improving UI, optimizing database structure, or enhancing functionality.
+Feel free to fork the repository, make enhancements, and submit a pull request.
+::contentReference[oaicite:2]{index=2}
+```
